@@ -1,0 +1,10 @@
+README.md
+setup.py
+Inference/__init__.py
+Inference/prediction.py
+Utils/__init__.py
+Utils/config.py
+news_classification.egg-info/PKG-INFO
+news_classification.egg-info/SOURCES.txt
+news_classification.egg-info/dependency_links.txt
+news_classification.egg-info/top_level.txt

@@ -18,7 +18,7 @@ if __name__=='__main__':
 
     X_train, y_train, X_test, y_test = data_gen.get_train_test_seq()   
 
-    print(X_test.shape) 
+    print(y_train.shape) 
 
     model = Model(vocab_size=VOCAB_SIZE, embedding_dim=EMBEDDING_DIM, no_classes=no_of_classes)
 
