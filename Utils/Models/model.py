@@ -8,7 +8,8 @@ class Model:
         self.model = tf.keras.Sequential([
             tf.keras.layers.Embedding(vocab_size, embedding_dim),
             tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(embedding_dim)),
-            tf.keras.layers.Dense(embedding_dim, activation='relu'),
+            tf.keras.layers.LSTM(32),
+            tf.keras.layers.Dense(32, activation='relu'),
             tf.keras.layers.Dense(no_classes, activation='softmax')
             ])
     
