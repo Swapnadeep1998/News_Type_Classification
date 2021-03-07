@@ -10,6 +10,8 @@ dependencies:
     - nltk
     - numpy==1.18.0
     - pandas
+    - fastapi
+    - uvicorn[standard]
 
 
 

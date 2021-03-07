@@ -1,4 +1,6 @@
 import pandas as pd
+import sys
+sys.path.append(".")
 from Utils.Preprocessing.preprocess import remove_stop_words, fit_tokenizer, gen_padded_sequences
 from Utils.Preprocessing.preprocess import get_labels
 
