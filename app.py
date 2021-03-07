@@ -7,6 +7,9 @@ import uvicorn
 class Message(BaseModel):
     text: list
 
+model_dir = config.MODEL_DIR
+classifier = Classifier(model_dir)
+
 app = FastAPI()
 
 
@@ -15,7 +18,6 @@ async def home(msg:Message):
     categories, confidence = classifier.predict(msg.text)
     return {"category":categories, "confidence":str(confidence)}
 
-if __name__ == "__main__":
-    model_dir = config.MODEL_DIR
-    classifier = Classifier(model_dir)
+#if __name__ == "__main__":
+    
     uvicorn.run(app)

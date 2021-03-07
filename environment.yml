@@ -12,6 +12,7 @@ dependencies:
     - pandas
     - fastapi
     - uvicorn[standard]
+    - sklearn
 
 
 

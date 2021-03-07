@@ -8,6 +8,7 @@ from nltk.corpus import stopwords
 import io
 import json
 import numpy as np
+from sklearn.preprocessing import LabelEncoder
 
 VOCAB_SIZE = config.VOCAB_SIZE
 OOV_TOKEN = config.OOV_TOKEN
@@ -76,12 +77,11 @@ def get_labels(train_labels:list, val_labels:list):
     for the labels, also known
     as label binarizer
     """
-
-    label_tokenizer = Tokenizer()
-    label_tokenizer.fit_on_texts(train_labels)
-
-    train_label_seq = np.array(label_tokenizer.texts_to_sequences(train_labels))
-    val_label_seq = np.array(label_tokenizer.texts_to_sequences(val_labels))
+    encoder = LabelEncoder()
+    encoder.fit(train_labels)
+    train_label_seq = encoder.transform(train_labels)
+    val_label_seq = encoder.transform(val_labels)
+   
 
     return train_label_seq, val_label_seq
 

@@ -5,14 +5,14 @@ EMBEDDING_DIM=64
 MAX_LEN=200
 NO_CLASSES=5
 EPOCHS=10
-BATCH_SIZE=32
+BATCH_SIZE=16
 
 
 TRUNC_TYPE='post'
 PADDING_TYPE='post'
 OOV_TOKEN='<OOV>'
 TRAIN_TEST_SPLIT_RATIO=0.8
-LABELS=['entertainment', 'business', 'politics', 'tech', 'sport']
+LABELS=['business', 'entertainment', 'politics', 'sport', 'tech']
 
 TOKEN_FILE_NAME='tokenizer.json'
 CSV_FILE_NAME='bbc-text.csv'
