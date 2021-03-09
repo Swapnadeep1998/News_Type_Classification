@@ -2,7 +2,7 @@
 
 ## Steps To Run The App
 
-"Clone the repo & cd into it"
+'Clone the repo & cd into it'
 
 >> 1. git clone https://github.com/Swapnadeep1998/News_Type_Classification.git
 
