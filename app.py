@@ -18,6 +18,6 @@ async def home(msg:Message):
     categories, confidence = classifier.predict(msg.text)
     return {"category":categories, "confidence":str(confidence)}
 
-#if __name__ == "__main__":
     
-    uvicorn.run(app)
+if __name__=="__main__":    
+    uvicorn.run("app:app", host='0.0.0.0', port=8000, reload=True)

@@ -7,12 +7,12 @@ dependencies:
   - pip
   - tensorflow = 2.3.0
   - pip:
-    - nltk
+    - nltk==3.5
     - numpy==1.18.0
-    - pandas
-    - fastapi
+    - pandas==1.2.3
+    - fastapi==0.63.0
     - uvicorn[standard]
-    - sklearn
+    - sklearn==0.0
 
 
 

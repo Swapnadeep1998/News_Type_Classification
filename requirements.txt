@@ -1,0 +1,7 @@
+nltk==3.5
+numpy==1.18.0
+pandas==1.2.3
+fastapi==0.63.0
+uvicorn[standard]
+sklearn==0.0
+tensorflow==2.3.0
