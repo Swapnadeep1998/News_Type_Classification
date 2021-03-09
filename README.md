@@ -18,4 +18,4 @@
 
 >> 4. Open the SWAGGER UI in browser
 
-http://0.0.0.0:8000/docs
+`http://0.0.0.0:8000/docs`
